@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: 8080
+      CLIENT_ORIGIN: http://localhost:8080
+      JWT_SECRET: local-development-secret
